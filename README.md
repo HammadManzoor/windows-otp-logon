@@ -38,12 +38,13 @@ General Tab:
 
     Enter a name for the task (e.g., Run PowerShell Script).
     Check Run with highest privileges.
+    Check Run only when user is logged on.
     Select the appropriate operating system in the Configure for dropdown.
 
 Triggers Tab:
 
     Click New.
-    Set the trigger to At startup and click OK.
+    Set the trigger to At log on and click OK.
 
 Actions Tab:
 
