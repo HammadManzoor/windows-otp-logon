@@ -6,6 +6,7 @@ This script is a custom workaround to have OTP implementation for your Windows d
 - Checks for connection with smtp server before execution.
 - Generates a random 16-character password using secure methods.
 - Automatically updates the password for a specified user account.
+- Sends the new password via email
 - Easily integrates into Windows Task Scheduler for automated execution.
 
 
@@ -28,7 +29,7 @@ To configure the script to run automatically during each system logon, we will b
 ### Steps to Set Up Task Scheduler
 Open Task Scheduler:
     
-    Press Win + S, type Task Scheduler, and open it.
+    Press Win + S, type Task Scheduler, and open it with admin rights.
 
 Create a New Task:
 
@@ -38,12 +39,13 @@ General Tab:
 
     Enter a name for the task (e.g., Run PowerShell Script).
     Check Run with highest privileges.
+    Check Run only when user is logged on.
     Select the appropriate operating system in the Configure for dropdown.
 
 Triggers Tab:
 
     Click New.
-    Set the trigger to At startup and click OK.
+    Set the trigger to At log on and click OK.
 
 Actions Tab:
 
@@ -76,3 +78,7 @@ Click OK to save the task.
 #### Task does not trigger:
 
 - Confirm that the task is correctly configured to run at startup and enabled.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
