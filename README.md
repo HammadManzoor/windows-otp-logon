@@ -6,6 +6,7 @@ This script is a custom workaround to have OTP implementation for your Windows d
 - Checks for connection with smtp server before execution.
 - Generates a random 16-character password using secure methods.
 - Automatically updates the password for a specified user account.
+- Sends the new password via email
 - Easily integrates into Windows Task Scheduler for automated execution.
 
 
