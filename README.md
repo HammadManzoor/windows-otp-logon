@@ -28,7 +28,7 @@ To configure the script to run automatically during each system logon, we will b
 ### Steps to Set Up Task Scheduler
 Open Task Scheduler:
     
-    Press Win + S, type Task Scheduler, and open it.
+    Press Win + S, type Task Scheduler, and open it with admin rights.
 
 Create a New Task:
 
