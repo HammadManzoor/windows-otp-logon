@@ -77,3 +77,7 @@ Click OK to save the task.
 #### Task does not trigger:
 
 - Confirm that the task is correctly configured to run at startup and enabled.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
