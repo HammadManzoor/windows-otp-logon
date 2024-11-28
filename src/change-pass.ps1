@@ -29,9 +29,9 @@ IF (Test-NetConnection smtp.gmail.com -InformationLevel Quiet) {
 		# Email to send to
 		$To = 'receiver@xyz.com'
 		# SMTP credentials
-		$password = 'KEY-HERE'
+		$smtpKey = 'KEY-HERE'
 		$currentTime = Get-Date -format "dd-MMM-yyyy HH:mm:ss"
-		[SecureString]$securepassword = $password | ConvertTo-SecureString -AsPlainText -Force
+		[SecureString]$securepassword = $smtpKey | ConvertTo-SecureString -AsPlainText -Force
 		$credential = New-Object System.Management.Automation.PSCredential -ArgumentList $username, $securepassword
 		$subject = 'New login to $username'
 		$body = "There has been a new login to account $username at $currentTime (GMT+5). Your current password has been updated to $Passwd."
